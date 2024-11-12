@@ -1,0 +1,145 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY( -30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+
+}
+
+
+
+.perfil-card {
+    background-color: #2e2e2e;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.8px);
+    -webkit-backdrop-filter: blur(12.8px);
+    border: 1px solid rgba(255, 255, 255, 0.41);
+
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+
+.perfil-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+    
+
+}
+
+.verificado  i {
+    color: #1Da1f2;
+    font-size: 18px;
+
+    animation:  pulse 1.5s infinite;
+}
+
+.descricao {
+    font-size: 14px;
+    margin-bottom: 20px;
+
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+
+}
+
+.links {
+    text-align: left;
+
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
+
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    background: rgba(0, 0, 0, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(8.4px);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+
+}
+
+.link:hover {
+    background: #444;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.link i {
+    font-size: 30PX;
+    margin-right: 10PX;
+
+}
+
+.link-texto p {
+    margin: 0;
+
+}
+
+a{
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
